@@ -89,15 +89,6 @@
       "category": "Home",
       "deadline": "2025-03-31",
       "createdAt": "2024-05-15"
-    },
-    {
-      "id": "9d244cb5-d896-40ed-824b-04344ddd9b03",
-      "name": "Dream vacation",
-      "targetAmount": 10,
-      "category": "Travel",
-      "deadline": "2025-07-20",
-      "savedAmount": 3,
-      "createdAt": "2025-07-19"
     }
   ]
 }

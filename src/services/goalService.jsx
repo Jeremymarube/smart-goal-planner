@@ -1,4 +1,4 @@
-const BASE_URL = 'https://api-server-2-upau.onrender.com';
+const BASE_URL = 'http://localhost:3001/goals';
 
 export async function getGoals() {
   const res = await fetch(BASE_URL);

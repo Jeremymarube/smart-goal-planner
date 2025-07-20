@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# 🧠 Smart Goal Planner
+A financial goal-tracking app built with React and Tailwind CSS. Users can add, edit, delete, and make deposits toward personal financial goals like travel funds, emergency savings, or education.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## Demo
+<img width="1351" height="636" alt="2025-07-20 (1)" src="https://github.com/user-attachments/assets/6aa77908-fd02-4921-8d16-b328a69901f2" />
 
-In the project directory, you can run:
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🚀 Features
+- ✅ Add new financial goals with target amounts and deadlines
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 💰 Deposit savings toward specific goals
 
-### `npm test`
+- ✏️ Edit existing goals inline
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🗑️ Delete completed or irrelevant goals
 
-### `npm run build`
+-  📊 Dashboard overview showing:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+      - Total number of goals
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+      - Total amount saved
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+      - Number of completed goals
 
-### `npm run eject`
+      - Average deposit amount
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+      - Urgent goals approaching deadline
+ 
+        ---
+        
+ ### 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - React (Component-based frontend)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - Tailwind CSS (Responsive utility-first styling)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - JSON Server (Mock backend for storing goal data)
 
-## Learn More
+     ---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 📦 Installation
+ 1. **Clone the repository**
+    ```
+    git clone https://github.com/your-username/smart-goal-planner.git
+    cd smart-goal-planner
+    ```
+ 2. Install dependencies
+    ```
+    npm install
+    ```
+ 3.Start the JSON Server
+   ```
+   json-server --watch db.json --port 3001
+   ```
+ 4. Start the React app
+     ```
+    npm start
+     ```
+    - 📌 React app runs at http://localhost:3000
+    - 📌 JSON Server runs at http://localhost:3001/goals
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 📁 Folder Structure
+```
+smart-goal-planner/
+├── db.json
+├── package.json
+├── README.md    #This file
+├── public/
+│   └── index.html
+├── src/
+│   ├── App.js
+│   ├── index.js
+│   ├── components/
+│   │   ├── GoalCard.jsx
+│   │   ├── GoalForm.jsx
+│   │   ├── DepositForm.jsx
+|   |   ├── InlineGoalEditForm.jsx
+│   │   └── Overview.jsx
+│   ├── pages/
+│   │   └── Dashboard.jsx
+│   └── services/
+│       └── goalService.js
+```
 
-### Code Splitting
+### 🔧 Backend (db.json)
+```
+{
+  "goals": [
+    {
+      "id": 1,
+      "name": "Travel Fund",
+      "targetAmount": 1000,
+      "savedAmount": 200,
+      "deadline": "2025-08-01",
+      "category": "Travel"
+    }
+  ]
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+###  Author
+   Jeremy Marube
 
-### Analyzing the Bundle Size
+   ---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### License
+Copyright (c) 2025 Jeremy Marube
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

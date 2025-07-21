@@ -1,4 +1,4 @@
-const BASE_URL = 'https://api-server-2-upau.onrender.com';
+const BASE_URL = 'https://api-server-2-upau.onrender.com/goals';
 
 export async function getGoals() {
   const res = await fetch(BASE_URL);
@@ -28,3 +28,4 @@ export async function deleteGoal(id) {
     method: 'DELETE',
   });
 }
+

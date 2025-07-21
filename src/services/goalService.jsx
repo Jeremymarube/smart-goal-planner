@@ -1,4 +1,4 @@
-const BASE_URL = 'https://api-server-2-upau.onrender.com/goals';
+const BASE_URL = 'https://smart-goal-api-90m5.onrender.com/goals';
 
 export async function getGoals() {
   const res = await fetch(BASE_URL);
